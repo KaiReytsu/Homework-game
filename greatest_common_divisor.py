@@ -5,8 +5,7 @@ def greatest_common_divisor(num_one, num_two):
     '''Функция нвхождения наибольшего общего делителя'''
     if (num_two == 0):
         return num_one
-    else:
-        return greatest_common_divisor(num_two, num_one % num_two)
+    return greatest_common_divisor(num_two, num_one % num_two)
 
 first_num = int(input("Введите первое число:"))
 second_num = int(input("Введите второе число:"))
